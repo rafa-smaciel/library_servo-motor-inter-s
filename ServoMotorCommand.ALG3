@@ -1,0 +1,18 @@
+Rotina
+   Declare ANG, B1, B2 Numéricos
+   Mostra_Placa
+   [A]
+   Limpa
+   Escreva "Ângulo: ", ANG
+   B1=digital 1
+   B2=digital 2
+   Se B1=0 e ANG<180 Então
+      ANG=ANG+1
+   Senão
+      Se B2=0 e ANG>0 Então
+         ANG=ANG-1
+      FimSe
+   FimSe
+   Servo_Motor_1 ANG
+   VaPara A
+FimRotina
